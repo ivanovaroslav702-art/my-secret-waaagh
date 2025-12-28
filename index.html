@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ОРКСКИЙ МАГАЗИН "У ГАЗКУЛЛА"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="waaagh-box">
+        <h1>КУЗНИЦА ВАРБОССА: БОЛЬШЕ СТУКАЛ!</h1>
+        <p style="text-align: center;">КРАСНЫЙ ЗНАЧИТ БЫСТРЫЙ! ЗЕЛЕНЫЙ ЗНАЧИТ ЛУЧШИЙ!</p>
+
+        <div class="item">
+            <img src="https://www.gamerguides.com/assets/media/15/30128/blind_grenade2-92ff4b1e.png" alt="Граната" class="item-img">
+            <div class="item-info">
+                <h2>ЦЕЛЕУСТРЕМЛЕННАЯ ГРАНАТА</h2>
+                <p>МОЩЬ: 5 ОТРЯДОВ ДЛИНОУХИХ</p>
+                <p class="price">ЦЕНА: 20 ЖУБОВ</p>
+                <button>ВЗЯТЬ ЭТО!</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://i.pinimg.com/474x/32/df/bd/32dfbdcb8c90c2f01ba1618d3afe60a3.jpg" alt="Чоппа" class="item-img">
+            <div class="item-info">
+                <h2>ОСТРАЯ РУБИЛА</h2>
+                <p>МОЩЬ: РЕЖЕТ ЖЕСТЯНОК КАК МАСЛО</p>
+                <p class="price">ЦЕНА: 45 ЖУБОВ</p>
+                <button>ВЗЯТЬ ЭТО!</button>
+            </div>
+        </div>
+
+        <div class="item" style="flex-direction: column; border-bottom: none;">
+            <h2 style="text-align: center;">КУРС ЧЕЛОВЕЧЕСКИХ ЖУБОВ (BTC/USD)</h2>
+            <div id="btc-chart-container" style="width: 100%; height: 300px; border: 3px solid #44ff00; background: #000; overflow: hidden;">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                        "symbol": "BINANCE:BTCUSDT",
+                        "width": "100%",
+                        "height": "100%",
+                        "locale": "ru",
+                        "dateRange": "12M",
+                        "colorTheme": "dark",
+                        "trendLineColor": "rgba(255, 0, 0, 1)",
+                        "underLineColor": "rgba(68, 255, 0, 0.1)",
+                        "isTransparent": true,
+                        "autosize": true
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
